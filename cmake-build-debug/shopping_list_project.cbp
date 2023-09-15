@@ -82,6 +82,54 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/NotFoodItem.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/NotFoodItem.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/User.cpp">
+			<Option target="shopping_list_project"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/User.h">
+			<Option target="shopping_list_project"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/main.cpp">
 			<Option target="shopping_list_project"/>
 		</Unit>
