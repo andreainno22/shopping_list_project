@@ -17,13 +17,11 @@ void User::createShoppingList(std::string listName) {
 
 void User::deleteShoppingList(std::string name) {
 
-    std::map<std::string, std::shared_ptr<AbstractShoppingList>>::iterator it;
-    it = lists.find(name);
+    auto it = lists.find(name);
     if (it != lists.end()) {
-        lists.erase(name);
         detach(it->second);
-    }
-    else {
+        lists.erase(it);
+    } else {
         std::cout << "No lists called " + name << std::endl;
     }
 }
@@ -34,16 +32,14 @@ void User::addItem(const std::string &shoppingList, std::unique_ptr<Item> item) 
     if (it != lists.end()) {
         std::shared_ptr<ShoppingList> s = std::dynamic_pointer_cast<ShoppingList>(it->second);
         s->addItem(std::move(item));
-    }
-    else
+    } else
         std::cout << "the list " + shoppingList + " doesn't exists" << std::endl;
 
 }
 
 void User::update(std::string listName, int creatorId) {
-    std::map<std::string, std::shared_ptr<AbstractShoppingList>>::iterator it;
-    it = lists.find(listName);
-    if (it != lists.end() and creatorId != this->id )
+    auto it = lists.find(listName);
+    if (it != lists.end())
         std::cout << this->name << " something changes in " << listName << ", check it!\n" << std::endl;
 }
 
@@ -52,18 +48,21 @@ User::~User() {}
 //serve per abbonarsi a una nuova lista
 void User::attach(std::shared_ptr<AbstractShoppingList> newList) {
 
-        newList->registerUser(shared_from_this());
+    newList->registerUser(shared_from_this());
 
 }
 
 void User::detach(std::shared_ptr<AbstractShoppingList> listName) {
-        listName->removeUser(shared_from_this());
+    listName->removeUser(shared_from_this());
 }
 
 void User::printList(std::string list) {
 
     auto it = lists.find(list);
-    it->second->print();
+    if (it != lists.end())
+        it->second->print();
+    else
+        std::cout << name << ", no list named " + list + " in your collection\n" << std::endl;
 }
 
 void User::showCatalogue() {
@@ -81,4 +80,12 @@ void User::addShoppingList(std::string name) {
         this->lists.insert(std::make_pair(name, list));
         attach(list);
     }
+}
+
+void User::removeItem(const std::string category, const std::string name, const std::string list) {
+
+    auto it = lists.find(list);
+    if (it != lists.end())
+        it->second->removeItem(name, category);
+
 }

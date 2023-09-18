@@ -10,16 +10,11 @@
 #include <utility>
 #include "Item.h"
 
-
-enum class FoodCategory {
-    vegetables, meat, fish, dairy, fruits, carbohydrates, drinks, other
-};
-
 class FoodItem : public Item {
 public:
-    FoodItem(FoodCategory c, std::string name, int amount = 1, bool Frozen = false, bool ForFridge = false, float kilos = 0)
+    FoodItem(std::string category, std::string name, int amount = 1, bool Frozen = false, bool ForFridge = false, float kilos = 0)
             :
-            Item(std::move(name), amount), category(c), ForFridge(ForFridge), Frozen(Frozen), kilos(kilos) {};
+            Item(std::move(name), amount), category(std::move(category)), ForFridge(ForFridge), Frozen(Frozen), kilos(kilos) {};
 
     bool getFrozen() const {
         return Frozen;
@@ -39,10 +34,12 @@ public:
 
     void getInfo() override;
 
+    std::string getCategory() const override;
+
 private:
     bool Frozen;
     bool ForFridge;
-    FoodCategory category;
+    std::string category;
     float kilos;
 };
 

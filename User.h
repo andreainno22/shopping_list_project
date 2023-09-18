@@ -19,8 +19,8 @@
 class User : public AbstractUser {
 public:
     User(std::string name, std::string surname, std::shared_ptr<ShoppingListCatalogue> c) : name(std::move(name)),
-                                                                                   surname(std::move(surname)),
-                                                                                   catalogue(std::move(c)) {
+                                                                                            surname(std::move(surname)),
+                                                                                            catalogue(std::move(c)) {
         id = globalId++;
     }
 
@@ -35,6 +35,8 @@ public:
     void addShoppingList(std::string name);
 
     void addItem(const std::string &shoppingList, std::unique_ptr<Item> item);
+
+    void removeItem(std::string category, std::string name, std::string list);
 
     void attach(std::shared_ptr<AbstractShoppingList> listName) override;
 

@@ -19,6 +19,8 @@ public:
 
     virtual void getInfo() = 0;
 
+    virtual std::string getCategory() const = 0;
+
 protected:
     int amount;
     std::string name;

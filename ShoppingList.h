@@ -13,20 +13,18 @@
 #include "Item.h"
 #include "AbstractShoppingList.h"
 #include "AbstractUser.h"
+#include "FoodItem.h"
 
 // concrete subject
 class ShoppingList : public AbstractShoppingList {
 public:
-    ShoppingList(std::string name, int creatorId) : name(std::move(name)), creatorId(creatorId) {
-        //std::unique_ptr<std::lists<Item>> l(new std::lists<Item>);
-        //lists = std::move(l);
-    }
+    ShoppingList(std::string name, int creatorId) : name(std::move(name)), creatorId(creatorId) {}
 
     virtual ~ShoppingList();
 
     void addItem(std::unique_ptr<Item> i);
 
-    void removeItem(const std::string& i);
+    void removeItem(const std::string &i, std::string category) override;
 
     void registerUser(std::shared_ptr<AbstractUser> user) override;
 
@@ -44,7 +42,7 @@ private:
     std::string name;
     int creatorId;
     std::list<std::shared_ptr<AbstractUser>> users;
-    std::map<std::string, std::unique_ptr<Item>> list;
+    std::map<std::string, std::map<std::string, std::unique_ptr<Item>>> list;
 };
 
 

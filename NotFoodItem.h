@@ -10,18 +10,16 @@
 #include <utility>
 #include "Item.h"
 
-enum Category {
-    technology, kitchen, bathroom, other
-};
-
 class NotFoodItem : public Item {
 public:
-    NotFoodItem(Category c, std::string name, int amount = 1) : category(c), Item(std::move(name), amount) {}
+    NotFoodItem(std::string category, std::string name, int amount = 1) : category(category), Item(std::move(name), amount) {}
 
-    void getInfo() override ;
+    void getInfo() override;
+
+    std::string getCategory() const override;
 
 private:
-    Category category;
+    std::string category;
 };
 
 

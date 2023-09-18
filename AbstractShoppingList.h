@@ -26,6 +26,8 @@ public:
 
     virtual void print() = 0;
 
+    virtual void removeItem(const std::string &i, std::string category) = 0;
+
 };
 
 

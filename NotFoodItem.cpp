@@ -6,5 +6,9 @@
 #include "NotFoodItem.h"
 
 void NotFoodItem::getInfo() {
-    std::cout << name << ", amount: " << amount << std::endl;
+    std::cout << name << ", amount: " << amount << "\n" << std::endl;
+}
+
+std::string NotFoodItem::getCategory() const {
+    return category;
 }

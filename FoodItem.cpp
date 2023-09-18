@@ -9,3 +9,7 @@
 void FoodItem::getInfo() {
     std::cout << name << ", " << kilos << " kilos, amount: " << amount << "\n" << std::endl;
 }
+
+std::string FoodItem::getCategory() const {
+    return category;
+}
