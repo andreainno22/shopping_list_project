@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o"
   "CMakeFiles/shopping_list_project.dir/User.cpp.o"
   "CMakeFiles/shopping_list_project.dir/main.cpp.o"
+  "CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o"
   "shopping_list_project"
   "shopping_list_project.pdb"
 )

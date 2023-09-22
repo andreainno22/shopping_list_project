@@ -459,3 +459,31 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a586b/fast && /usr/bin/make -f CMakeFiles/cmTC_a586b.dir/build.make CMakeFiles/cmTC_a586b.dir/build
+make[1]: Entering directory '/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a586b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a586b.dir/CheckIncludeFile.c.o   -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a586b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a586b.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_a586b.dir/CheckIncludeFile.c.o  -o cmTC_a586b 
+make[1]: Leaving directory '/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5a931/fast && /usr/bin/make -f CMakeFiles/cmTC_5a931.dir/build.make CMakeFiles/cmTC_5a931.dir/build
+make[1]: Entering directory '/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5a931.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5a931.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5a931
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a931.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5a931.dir/CheckFunctionExists.c.o  -o cmTC_5a931  -lpthread 
+make[1]: Leaving directory '/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
