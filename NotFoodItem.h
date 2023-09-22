@@ -16,6 +16,14 @@ public:
 
     void getInfo() override;
 
+    bool getToBuy() const override{
+        return toBuy;
+    }
+
+    void setToBuy(bool toBuy) override{
+        this->toBuy = toBuy;
+    }
+
     std::string getCategory() const override;
 
 private:

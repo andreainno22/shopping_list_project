@@ -46,6 +46,8 @@ public:
 
     void showCatalogue();
 
+    void buyItem(std::string category, std::string name, std::string list);
+
 private:
     std::map<std::string, std::shared_ptr<AbstractShoppingList>> lists;
     std::string name, surname;

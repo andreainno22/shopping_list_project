@@ -22,12 +22,14 @@ CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o: ../NotFoodItem.h
 
 CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: ../AbstractShoppingList.h
 CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: ../AbstractUser.h
+CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: ../FoodItem.h
 CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: ../Item.h
 CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: ../ShoppingList.cpp
 CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: ../ShoppingList.h
 
 CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../AbstractShoppingList.h
 CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../AbstractUser.h
+CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../FoodItem.h
 CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../Item.h
 CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../ShoppingList.h
 CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../ShoppingListCatalogue.cpp
@@ -35,6 +37,7 @@ CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../ShoppingLis
 
 CMakeFiles/shopping_list_project.dir/User.cpp.o: ../AbstractShoppingList.h
 CMakeFiles/shopping_list_project.dir/User.cpp.o: ../AbstractUser.h
+CMakeFiles/shopping_list_project.dir/User.cpp.o: ../FoodItem.h
 CMakeFiles/shopping_list_project.dir/User.cpp.o: ../Item.h
 CMakeFiles/shopping_list_project.dir/User.cpp.o: ../ShoppingList.h
 CMakeFiles/shopping_list_project.dir/User.cpp.o: ../ShoppingListCatalogue.h
@@ -50,4 +53,6 @@ CMakeFiles/shopping_list_project.dir/main.cpp.o: ../ShoppingList.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../ShoppingListCatalogue.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../User.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../main.cpp
+
+CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o: ../test/ShoppingListTests.cpp
 

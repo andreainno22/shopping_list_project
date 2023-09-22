@@ -36,6 +36,14 @@ public:
 
     std::string getCategory() const override;
 
+    bool getToBuy() const override{
+        return toBuy;
+    }
+
+    void setToBuy(bool toBuy) override{
+        this->toBuy = toBuy;
+    }
+
 private:
     bool Frozen;
     bool ForFridge;

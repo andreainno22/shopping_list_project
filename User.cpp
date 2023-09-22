@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <utility>
 #include "User.h"
 
 int User::globalId = 0;
@@ -87,5 +88,13 @@ void User::removeItem(const std::string category, const std::string name, const 
     auto it = lists.find(list);
     if (it != lists.end())
         it->second->removeItem(name, category);
+
+}
+
+void User::buyItem(std::string category, std::string name, std::string list) {
+
+        auto it = lists.find(list);
+        if (it != lists.end())
+            it->second->buyItem(name, std::move(category));
 
 }

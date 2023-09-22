@@ -87,3 +87,18 @@ void ShoppingList::print() {
 
     std::cout<<"---------------------------------\n"<<std::endl;
 }
+
+void ShoppingList::buyItem(const std::string &i, std::string category) {
+
+        auto it = list.find(category);
+        if (it != list.end()) {
+            auto ptr = it->second.find(i);
+            if (ptr != it->second.end()) {
+                ptr->second->setToBuy(false);
+                notify();
+            } else
+                std::cout << i << " is not in " << this->name << " list." << std::endl;
+        } else
+            std::cout << i << " is not in " << this->name << " list." << std::endl;
+
+}

@@ -26,6 +26,8 @@ public:
 
     void removeItem(const std::string &i, std::string category) override;
 
+    void buyItem(const std::string &i, std::string category) override;
+
     void registerUser(std::shared_ptr<AbstractUser> user) override;
 
     void removeUser(std::shared_ptr<AbstractUser> user) override;

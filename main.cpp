@@ -26,5 +26,7 @@ int main() {
     pippo->deleteShoppingList("listaccia");
     pippo->printList("listaccia");
     andrea->printList("listaccia");
+    pippo->buyItem("kitchen", "scottex", "prima_lista");
+    andrea->printList("prima_lista");
 
 }

@@ -20,6 +20,8 @@ public:
 
     virtual void removeUser(std::shared_ptr<AbstractUser> user) = 0;
 
+    virtual void buyItem(const std::string &i, std::string category) = 0;
+
     virtual void notify() = 0;
 
     virtual std::string getName() const = 0;

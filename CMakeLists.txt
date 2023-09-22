@@ -19,4 +19,28 @@ add_executable(shopping_list_project main.cpp
         AbstractShoppingList.cpp
         AbstractShoppingList.h
         ShoppingListCatalogue.cpp
-        ShoppingListCatalogue.h)
+        ShoppingListCatalogue.h
+        test/ShoppingListTests.cpp)
+add_subdirectory(test)
+set(SOURCE_FILES
+        Item.cpp
+        Item.h
+        FoodItem.cpp
+        FoodItem.h
+        NotFoodItem.cpp
+        NotFoodItem.h
+        AbstractUser.cpp
+        AbstractUser.h
+        User.cpp
+        User.h
+        ShoppingList.cpp
+        ShoppingList.h
+        AbstractShoppingList.cpp
+        AbstractShoppingList.h
+        ShoppingListCatalogue.cpp
+        ShoppingListCatalogue.h
+        test/ShoppingListTests.cpp)
+add_library(core ${SOURCE_FILES})
+target_link_libraries(shopping_list_project core)
+
+

@@ -23,12 +23,14 @@ CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o
 CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.h
+ /mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.cpp
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.h
 CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.h
+ /mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.cpp
@@ -36,6 +38,7 @@ CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o
 CMakeFiles/shopping_list_project.dir/User.cpp.o
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.h
+ /mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.h
@@ -51,3 +54,5 @@ CMakeFiles/shopping_list_project.dir/main.cpp.o
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/User.h
  /mnt/c/Users/andrea/CLionProjects/shopping_list_project/main.cpp
+CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o
+ /mnt/c/Users/andrea/CLionProjects/shopping_list_project/test/ShoppingListTests.cpp

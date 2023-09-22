@@ -11,7 +11,7 @@
 
 class Item { ;
 public:
-    explicit Item(std::string name, int amount = 1) : amount(amount) , name(std::move(name)){}
+    explicit Item(std::string name, int amount = 1) : amount(amount) , toBuy(true), name(std::move(name)){}
 
     std::string getName() const {
         return name;
@@ -21,9 +21,14 @@ public:
 
     virtual std::string getCategory() const = 0;
 
+    virtual void setToBuy(bool toBuy) = 0;
+
+    virtual bool getToBuy() const = 0;
+
 protected:
     int amount;
     std::string name;
+    bool toBuy;
 };
 
 

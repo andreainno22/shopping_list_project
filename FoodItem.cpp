@@ -7,7 +7,9 @@
 
 
 void FoodItem::getInfo() {
-    std::cout << name << ", " << kilos << " kilos, amount: " << amount << "\n" << std::endl;
+    std::cout << name << ", " << kilos << " kilos, amount: " << amount << ", to buy: " << std::boolalpha << getToBuy()
+              << "\n"
+              << std::endl;
 }
 
 std::string FoodItem::getCategory() const {
