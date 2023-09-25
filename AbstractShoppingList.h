@@ -30,6 +30,8 @@ public:
 
     virtual void removeItem(const std::string &i, std::string category) = 0;
 
+    virtual bool checkItem(std::string category, std::string name) = 0;
+
 };
 
 

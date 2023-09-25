@@ -98,3 +98,24 @@ void User::buyItem(std::string category, std::string name, std::string list) {
             it->second->buyItem(name, std::move(category));
 
 }
+
+bool User::checkList(std::string list) {
+        auto it = lists.find(list);
+        if (it != lists.end())
+            return true;
+        else
+            return false;
+}
+
+bool User::checkItem(std::string category, std::string name, std::string list) {
+        auto it = lists.find(list);
+        if (it != lists.end()) {
+            return(it->second->checkItem(std::move(category), std::move(name)));
+
+        } else
+            return false;
+}
+
+int User::getId() const {
+    return id;
+}

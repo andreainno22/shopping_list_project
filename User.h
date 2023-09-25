@@ -24,6 +24,13 @@ public:
         id = globalId++;
     }
 
+    User(std::shared_ptr<ShoppingListCatalogue> c, int id){
+        this->catalogue = std::move(c);
+        this->id = id;
+    }
+
+    int getId() const override;
+
     ~User() override;
 
     void update(std::string listName, int creatorId) override;
@@ -38,15 +45,20 @@ public:
 
     void removeItem(std::string category, std::string name, std::string list);
 
-    void attach(std::shared_ptr<AbstractShoppingList> listName) override;
-
-    void detach(std::shared_ptr<AbstractShoppingList> listName) override;
-
     void printList(std::string list);
 
     void showCatalogue();
 
     void buyItem(std::string category, std::string name, std::string list);
+
+    bool checkList(std::string list);
+
+    bool checkItem(std::string category, std::string name, std::string list);
+
+private:
+    void attach(std::shared_ptr<AbstractShoppingList> listName) override;
+
+    void detach(std::shared_ptr<AbstractShoppingList> listName) override;
 
 private:
     std::map<std::string, std::shared_ptr<AbstractShoppingList>> lists;

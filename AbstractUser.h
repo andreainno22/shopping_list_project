@@ -21,6 +21,8 @@ public:
 
     virtual void detach(std::shared_ptr<AbstractShoppingList> listName) = 0;
 
+    virtual int getId() const = 0;
+
 };
 
 

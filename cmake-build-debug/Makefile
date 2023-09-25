@@ -254,7 +254,6 @@ AbstractShoppingList.o: AbstractShoppingList.cpp.o
 # target to build an object file
 AbstractShoppingList.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/AbstractShoppingList.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.o
 .PHONY : AbstractShoppingList.cpp.o
 
 AbstractShoppingList.i: AbstractShoppingList.cpp.i
@@ -264,7 +263,6 @@ AbstractShoppingList.i: AbstractShoppingList.cpp.i
 # target to preprocess a source file
 AbstractShoppingList.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/AbstractShoppingList.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.i
 .PHONY : AbstractShoppingList.cpp.i
 
 AbstractShoppingList.s: AbstractShoppingList.cpp.s
@@ -274,7 +272,6 @@ AbstractShoppingList.s: AbstractShoppingList.cpp.s
 # target to generate assembly for a file
 AbstractShoppingList.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/AbstractShoppingList.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.s
 .PHONY : AbstractShoppingList.cpp.s
 
 AbstractUser.o: AbstractUser.cpp.o
@@ -284,7 +281,6 @@ AbstractUser.o: AbstractUser.cpp.o
 # target to build an object file
 AbstractUser.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/AbstractUser.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.o
 .PHONY : AbstractUser.cpp.o
 
 AbstractUser.i: AbstractUser.cpp.i
@@ -294,7 +290,6 @@ AbstractUser.i: AbstractUser.cpp.i
 # target to preprocess a source file
 AbstractUser.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/AbstractUser.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.i
 .PHONY : AbstractUser.cpp.i
 
 AbstractUser.s: AbstractUser.cpp.s
@@ -304,7 +299,6 @@ AbstractUser.s: AbstractUser.cpp.s
 # target to generate assembly for a file
 AbstractUser.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/AbstractUser.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.s
 .PHONY : AbstractUser.cpp.s
 
 FoodItem.o: FoodItem.cpp.o
@@ -314,7 +308,6 @@ FoodItem.o: FoodItem.cpp.o
 # target to build an object file
 FoodItem.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/FoodItem.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/FoodItem.cpp.o
 .PHONY : FoodItem.cpp.o
 
 FoodItem.i: FoodItem.cpp.i
@@ -324,7 +317,6 @@ FoodItem.i: FoodItem.cpp.i
 # target to preprocess a source file
 FoodItem.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/FoodItem.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/FoodItem.cpp.i
 .PHONY : FoodItem.cpp.i
 
 FoodItem.s: FoodItem.cpp.s
@@ -334,7 +326,6 @@ FoodItem.s: FoodItem.cpp.s
 # target to generate assembly for a file
 FoodItem.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/FoodItem.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/FoodItem.cpp.s
 .PHONY : FoodItem.cpp.s
 
 Item.o: Item.cpp.o
@@ -344,7 +335,6 @@ Item.o: Item.cpp.o
 # target to build an object file
 Item.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Item.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/Item.cpp.o
 .PHONY : Item.cpp.o
 
 Item.i: Item.cpp.i
@@ -354,7 +344,6 @@ Item.i: Item.cpp.i
 # target to preprocess a source file
 Item.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Item.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/Item.cpp.i
 .PHONY : Item.cpp.i
 
 Item.s: Item.cpp.s
@@ -364,7 +353,6 @@ Item.s: Item.cpp.s
 # target to generate assembly for a file
 Item.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Item.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/Item.cpp.s
 .PHONY : Item.cpp.s
 
 NotFoodItem.o: NotFoodItem.cpp.o
@@ -374,7 +362,6 @@ NotFoodItem.o: NotFoodItem.cpp.o
 # target to build an object file
 NotFoodItem.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/NotFoodItem.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o
 .PHONY : NotFoodItem.cpp.o
 
 NotFoodItem.i: NotFoodItem.cpp.i
@@ -384,7 +371,6 @@ NotFoodItem.i: NotFoodItem.cpp.i
 # target to preprocess a source file
 NotFoodItem.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/NotFoodItem.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.i
 .PHONY : NotFoodItem.cpp.i
 
 NotFoodItem.s: NotFoodItem.cpp.s
@@ -394,7 +380,6 @@ NotFoodItem.s: NotFoodItem.cpp.s
 # target to generate assembly for a file
 NotFoodItem.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/NotFoodItem.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.s
 .PHONY : NotFoodItem.cpp.s
 
 ShoppingList.o: ShoppingList.cpp.o
@@ -404,7 +389,6 @@ ShoppingList.o: ShoppingList.cpp.o
 # target to build an object file
 ShoppingList.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/ShoppingList.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o
 .PHONY : ShoppingList.cpp.o
 
 ShoppingList.i: ShoppingList.cpp.i
@@ -414,7 +398,6 @@ ShoppingList.i: ShoppingList.cpp.i
 # target to preprocess a source file
 ShoppingList.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/ShoppingList.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.i
 .PHONY : ShoppingList.cpp.i
 
 ShoppingList.s: ShoppingList.cpp.s
@@ -424,7 +407,6 @@ ShoppingList.s: ShoppingList.cpp.s
 # target to generate assembly for a file
 ShoppingList.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/ShoppingList.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.s
 .PHONY : ShoppingList.cpp.s
 
 ShoppingListCatalogue.o: ShoppingListCatalogue.cpp.o
@@ -434,7 +416,6 @@ ShoppingListCatalogue.o: ShoppingListCatalogue.cpp.o
 # target to build an object file
 ShoppingListCatalogue.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/ShoppingListCatalogue.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o
 .PHONY : ShoppingListCatalogue.cpp.o
 
 ShoppingListCatalogue.i: ShoppingListCatalogue.cpp.i
@@ -444,7 +425,6 @@ ShoppingListCatalogue.i: ShoppingListCatalogue.cpp.i
 # target to preprocess a source file
 ShoppingListCatalogue.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/ShoppingListCatalogue.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.i
 .PHONY : ShoppingListCatalogue.cpp.i
 
 ShoppingListCatalogue.s: ShoppingListCatalogue.cpp.s
@@ -454,7 +434,6 @@ ShoppingListCatalogue.s: ShoppingListCatalogue.cpp.s
 # target to generate assembly for a file
 ShoppingListCatalogue.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/ShoppingListCatalogue.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.s
 .PHONY : ShoppingListCatalogue.cpp.s
 
 User.o: User.cpp.o
@@ -464,7 +443,6 @@ User.o: User.cpp.o
 # target to build an object file
 User.cpp.o:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/User.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/User.cpp.o
 .PHONY : User.cpp.o
 
 User.i: User.cpp.i
@@ -474,7 +452,6 @@ User.i: User.cpp.i
 # target to preprocess a source file
 User.cpp.i:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/User.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/User.cpp.i
 .PHONY : User.cpp.i
 
 User.s: User.cpp.s
@@ -484,7 +461,6 @@ User.s: User.cpp.s
 # target to generate assembly for a file
 User.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/User.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/User.cpp.s
 .PHONY : User.cpp.s
 
 main.o: main.cpp.o
@@ -513,36 +489,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-test/ShoppingListTests.o: test/ShoppingListTests.cpp.o
-
-.PHONY : test/ShoppingListTests.o
-
-# target to build an object file
-test/ShoppingListTests.cpp.o:
-	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/test/ShoppingListTests.cpp.o
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o
-.PHONY : test/ShoppingListTests.cpp.o
-
-test/ShoppingListTests.i: test/ShoppingListTests.cpp.i
-
-.PHONY : test/ShoppingListTests.i
-
-# target to preprocess a source file
-test/ShoppingListTests.cpp.i:
-	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/test/ShoppingListTests.cpp.i
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.i
-.PHONY : test/ShoppingListTests.cpp.i
-
-test/ShoppingListTests.s: test/ShoppingListTests.cpp.s
-
-.PHONY : test/ShoppingListTests.s
-
-# target to generate assembly for a file
-test/ShoppingListTests.cpp.s:
-	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/test/ShoppingListTests.cpp.s
-	$(MAKE) -f CMakeFiles/shopping_list_project.dir/build.make CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.s
-.PHONY : test/ShoppingListTests.cpp.s
 
 # Help Target
 help:
@@ -590,9 +536,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... test/ShoppingListTests.o"
-	@echo "... test/ShoppingListTests.i"
-	@echo "... test/ShoppingListTests.s"
 .PHONY : help
 
 

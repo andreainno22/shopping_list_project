@@ -36,9 +36,14 @@ public:
 
     void setName(const std::string &name);
 
-    void notify() override;
-
     void print() override;
+
+    bool checkItem(std::string category, std::string name) override;
+
+    bool checkUser(std::shared_ptr<AbstractUser> user);
+
+private:
+    void notify() override;
 
 private:
     std::string name;

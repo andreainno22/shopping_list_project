@@ -70,153 +70,18 @@ CMakeFiles/shopping_list_project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/main.cpp -o CMakeFiles/shopping_list_project.dir/main.cpp.s
 
-CMakeFiles/shopping_list_project.dir/Item.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/Item.cpp.o: ../Item.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shopping_list_project.dir/Item.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/Item.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.cpp
-
-CMakeFiles/shopping_list_project.dir/Item.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/Item.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.cpp > CMakeFiles/shopping_list_project.dir/Item.cpp.i
-
-CMakeFiles/shopping_list_project.dir/Item.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/Item.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.cpp -o CMakeFiles/shopping_list_project.dir/Item.cpp.s
-
-CMakeFiles/shopping_list_project.dir/FoodItem.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/FoodItem.cpp.o: ../FoodItem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shopping_list_project.dir/FoodItem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/FoodItem.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.cpp
-
-CMakeFiles/shopping_list_project.dir/FoodItem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/FoodItem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.cpp > CMakeFiles/shopping_list_project.dir/FoodItem.cpp.i
-
-CMakeFiles/shopping_list_project.dir/FoodItem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/FoodItem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/FoodItem.cpp -o CMakeFiles/shopping_list_project.dir/FoodItem.cpp.s
-
-CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o: ../NotFoodItem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/NotFoodItem.cpp
-
-CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/NotFoodItem.cpp > CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.i
-
-CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/NotFoodItem.cpp -o CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.s
-
-CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.o: ../AbstractUser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.cpp
-
-CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.cpp > CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.i
-
-CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractUser.cpp -o CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.s
-
-CMakeFiles/shopping_list_project.dir/User.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/User.cpp.o: ../User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/shopping_list_project.dir/User.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/User.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/User.cpp
-
-CMakeFiles/shopping_list_project.dir/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/User.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/User.cpp > CMakeFiles/shopping_list_project.dir/User.cpp.i
-
-CMakeFiles/shopping_list_project.dir/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/User.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/User.cpp -o CMakeFiles/shopping_list_project.dir/User.cpp.s
-
-CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o: ../ShoppingList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.cpp
-
-CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.cpp > CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.i
-
-CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingList.cpp -o CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.s
-
-CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.o: ../AbstractShoppingList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.cpp
-
-CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.cpp > CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.i
-
-CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/AbstractShoppingList.cpp -o CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.s
-
-CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o: ../ShoppingListCatalogue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.cpp
-
-CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.cpp > CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.i
-
-CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/ShoppingListCatalogue.cpp -o CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.s
-
-CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o: CMakeFiles/shopping_list_project.dir/flags.make
-CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o: ../test/ShoppingListTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o -c /mnt/c/Users/andrea/CLionProjects/shopping_list_project/test/ShoppingListTests.cpp
-
-CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andrea/CLionProjects/shopping_list_project/test/ShoppingListTests.cpp > CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.i
-
-CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andrea/CLionProjects/shopping_list_project/test/ShoppingListTests.cpp -o CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.s
-
 # Object files for target shopping_list_project
 shopping_list_project_OBJECTS = \
-"CMakeFiles/shopping_list_project.dir/main.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/Item.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/FoodItem.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/User.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o" \
-"CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o"
+"CMakeFiles/shopping_list_project.dir/main.cpp.o"
 
 # External object files for target shopping_list_project
 shopping_list_project_EXTERNAL_OBJECTS =
 
 shopping_list_project: CMakeFiles/shopping_list_project.dir/main.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/Item.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/FoodItem.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/NotFoodItem.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/AbstractUser.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/User.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/ShoppingList.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/AbstractShoppingList.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/ShoppingListCatalogue.cpp.o
-shopping_list_project: CMakeFiles/shopping_list_project.dir/test/ShoppingListTests.cpp.o
 shopping_list_project: CMakeFiles/shopping_list_project.dir/build.make
 shopping_list_project: libcore.a
 shopping_list_project: CMakeFiles/shopping_list_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable shopping_list_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/andrea/CLionProjects/shopping_list_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable shopping_list_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shopping_list_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

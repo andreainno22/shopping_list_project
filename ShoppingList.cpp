@@ -102,3 +102,23 @@ void ShoppingList::buyItem(const std::string &i, std::string category) {
             std::cout << i << " is not in " << this->name << " list." << std::endl;
 
 }
+
+bool ShoppingList::checkItem(std::string category, std::string name) {
+    auto it = list.find(category);
+    if (it != list.end()) {
+        auto ptr = it->second.find(name);
+        if (ptr != it->second.end())
+            return true;
+        else
+            return false;
+    } else
+        return false;
+}
+
+bool ShoppingList::checkUser(std::shared_ptr<AbstractUser> user) {
+    for (auto &it: users) {
+        if (it->getId() == user->getId())
+            return true;
+    }
+    return false;
+}
