@@ -5,6 +5,7 @@ CMakeFiles/shopping_list_project.dir/main.cpp.o: ../AbstractShoppingList.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../AbstractUser.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../FoodItem.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../Item.h
+CMakeFiles/shopping_list_project.dir/main.cpp.o: ../MenuManager.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../NotFoodItem.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../ShoppingList.h
 CMakeFiles/shopping_list_project.dir/main.cpp.o: ../ShoppingListCatalogue.h

@@ -355,6 +355,33 @@ Item.cpp.s:
 	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/Item.cpp.s
 .PHONY : Item.cpp.s
 
+MenuManager.o: MenuManager.cpp.o
+
+.PHONY : MenuManager.o
+
+# target to build an object file
+MenuManager.cpp.o:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/MenuManager.cpp.o
+.PHONY : MenuManager.cpp.o
+
+MenuManager.i: MenuManager.cpp.i
+
+.PHONY : MenuManager.i
+
+# target to preprocess a source file
+MenuManager.cpp.i:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/MenuManager.cpp.i
+.PHONY : MenuManager.cpp.i
+
+MenuManager.s: MenuManager.cpp.s
+
+.PHONY : MenuManager.s
+
+# target to generate assembly for a file
+MenuManager.cpp.s:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/MenuManager.cpp.s
+.PHONY : MenuManager.cpp.s
+
 NotFoodItem.o: NotFoodItem.cpp.o
 
 .PHONY : NotFoodItem.o
@@ -521,6 +548,9 @@ help:
 	@echo "... Item.o"
 	@echo "... Item.i"
 	@echo "... Item.s"
+	@echo "... MenuManager.o"
+	@echo "... MenuManager.i"
+	@echo "... MenuManager.s"
 	@echo "... NotFoodItem.o"
 	@echo "... NotFoodItem.i"
 	@echo "... NotFoodItem.s"

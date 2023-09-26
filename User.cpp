@@ -126,3 +126,16 @@ void User::reorderItem(std::list<std::string> categories, std::string list) {
         it->second->reorderItem(std::move(categories));
     }
 }
+
+const std::string &User::getName() const {
+    return name;
+}
+
+const std::string &User::getSurname() const {
+    return surname;
+}
+
+const void User::printAllLists() {
+    for (auto &it: lists)
+        printList(it.first);
+}

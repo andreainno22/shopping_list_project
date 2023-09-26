@@ -20,7 +20,9 @@ set(SOURCE_FILES
         AbstractShoppingList.cpp
         AbstractShoppingList.h
         ShoppingListCatalogue.cpp
-        ShoppingListCatalogue.h)
+        ShoppingListCatalogue.h
+        MenuManager.cpp
+        MenuManager.h)
 add_library(core ${SOURCE_FILES})
 target_link_libraries(shopping_list_project core)
 

@@ -57,6 +57,12 @@ public:
 
     void reorderItem(std::list<std::string> categories, std::string list);
 
+    const std::string &getName() const;
+
+    const std::string &getSurname() const;
+
+    const void printAllLists();
+
 private:
     void attach(std::shared_ptr<AbstractShoppingList> listName) override;
 

@@ -438,6 +438,12 @@
 		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/Item.h">
 			<Option target="core"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/MenuManager.cpp">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/MenuManager.h">
+			<Option target="core"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/NotFoodItem.cpp">
 			<Option target="core"/>
 		</Unit>

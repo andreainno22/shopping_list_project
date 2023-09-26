@@ -2,10 +2,16 @@
 #include "User.h"
 #include "FoodItem.h"
 #include "NotFoodItem.h"
+#include "MenuManager.h"
 
 int main() {
 
     std::shared_ptr<ShoppingListCatalogue> catalogue(new ShoppingListCatalogue());
+    MenuManager session = MenuManager(catalogue);
+    session.start();
+
+
+/*
     std::shared_ptr<User> andrea (new User("andrea", "innocenti", catalogue));
     andrea->createShoppingList("prima_lista");
     andrea->addItem("prima_lista", std::make_unique<FoodItem>("vegetables", "carrots"));
@@ -28,5 +34,5 @@ int main() {
     pippo->buyItem("kitchen", "scottex", "prima_lista");
     andrea->printList("prima_lista");
     pippo->reorderItem({"vegetables", "meat", "kitchen"}, "prima_lista");
-    pippo->printList("prima_lista");
+    pippo->printList("prima_lista");*/
 }
