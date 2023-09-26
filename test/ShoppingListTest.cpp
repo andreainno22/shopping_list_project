@@ -41,4 +41,19 @@ TEST_F(ShoppingListTest, removeItemTest) {
     ASSERT_FALSE(list->checkItem("testCat", "testItem"));
 }
 
+TEST_F(ShoppingListTest, reorderItems) {
+    std::string testCat = "testCat";
+    std::string testCat1 = "testCat1";
+    std::unique_ptr<Item> i(new FoodItem(testCat, "testItem"));
+    std::unique_ptr<Item> i1(new FoodItem(testCat1, "testItem1"));
+    auto list = std::make_shared<ShoppingList>("test", 0);
+    user->addItem(list->getName(), std::move(i));
+    user->addItem(list->getName(), std::move(i1));
+    std::list<std::string> categories = {testCat1, testCat};
+    user->reorderItem(categories, list->getName());
+    for (auto &it: list->getList()) {
+        ASSERT_EQ(it.first, categories.front());
+        categories.pop_front();
+    }
+}
 

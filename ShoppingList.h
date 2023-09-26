@@ -22,7 +22,7 @@ public:
 
     virtual ~ShoppingList();
 
-    void addItem(std::unique_ptr<Item> i);
+    void addItem(std::shared_ptr<Item> i);
 
     void removeItem(const std::string &i, std::string category) override;
 
@@ -42,6 +42,10 @@ public:
 
     bool checkUser(std::shared_ptr<AbstractUser> user);
 
+    void reorderItem(std::list<std::string> categories) override;
+
+    std::map<std::string, std::map<std::string, std::shared_ptr<Item>>> getList() const;
+
 private:
     void notify() override;
 
@@ -49,7 +53,7 @@ private:
     std::string name;
     int creatorId;
     std::list<std::shared_ptr<AbstractUser>> users;
-    std::map<std::string, std::map<std::string, std::unique_ptr<Item>>> list;
+    std::map<std::string, std::map<std::string, std::shared_ptr<Item>>> list;
 };
 
 

@@ -14,22 +14,22 @@ class FoodItem : public Item {
 public:
     FoodItem(std::string category, std::string name, int amount = 1, bool Frozen = false, bool ForFridge = false, float kilos = 0)
             :
-            Item(std::move(name), amount), category(std::move(category)), ForFridge(ForFridge), Frozen(Frozen), kilos(kilos) {};
+            Item(std::move(name), amount), category(std::move(category)), forFridge(ForFridge), frozen(Frozen), kilos(kilos) {};
 
     bool getFrozen() const {
-        return Frozen;
+        return frozen;
     }
 
     void setFrozen(bool frozen) {
-        FoodItem::Frozen = frozen;
+        FoodItem::frozen = frozen;
     }
 
     bool getForFridge() const {
-        return ForFridge;
+        return forFridge;
     }
 
     void setForFridge(bool forFridge) {
-        FoodItem::ForFridge = forFridge;
+        FoodItem::forFridge = forFridge;
     }
 
     void getInfo() override;
@@ -45,8 +45,8 @@ public:
     }
 
 private:
-    bool Frozen;
-    bool ForFridge;
+    bool frozen;
+    bool forFridge;
     std::string category;
     float kilos;
 };

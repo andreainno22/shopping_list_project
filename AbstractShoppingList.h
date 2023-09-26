@@ -7,6 +7,7 @@
 
 
 #include <memory>
+#include <list>
 #include "AbstractUser.h"
 
 class AbstractUser;
@@ -31,6 +32,8 @@ public:
     virtual void removeItem(const std::string &i, std::string category) = 0;
 
     virtual bool checkItem(std::string category, std::string name) = 0;
+
+    virtual void reorderItem(std::list<std::string> categories) = 0;
 
 };
 

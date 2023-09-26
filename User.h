@@ -55,6 +55,8 @@ public:
 
     bool checkItem(std::string category, std::string name, std::string list);
 
+    void reorderItem(std::list<std::string> categories, std::string list);
+
 private:
     void attach(std::shared_ptr<AbstractShoppingList> listName) override;
 

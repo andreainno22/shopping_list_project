@@ -7,7 +7,6 @@ int main() {
 
     std::shared_ptr<ShoppingListCatalogue> catalogue(new ShoppingListCatalogue());
     std::shared_ptr<User> andrea (new User("andrea", "innocenti", catalogue));
-
     andrea->createShoppingList("prima_lista");
     andrea->addItem("prima_lista", std::make_unique<FoodItem>("vegetables", "carrots"));
     andrea->addItem("prima_lista", std::make_unique<NotFoodItem>("kitchen","scottex"));
@@ -28,5 +27,6 @@ int main() {
     andrea->printList("listaccia");
     pippo->buyItem("kitchen", "scottex", "prima_lista");
     andrea->printList("prima_lista");
-
+    pippo->reorderItem({"vegetables", "meat", "kitchen"}, "prima_lista");
+    pippo->printList("prima_lista");
 }

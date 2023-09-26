@@ -119,3 +119,10 @@ bool User::checkItem(std::string category, std::string name, std::string list) {
 int User::getId() const {
     return id;
 }
+
+void User::reorderItem(std::list<std::string> categories, std::string list) {
+    auto it = lists.find(list);
+    if (it != lists.end()) {
+        it->second->reorderItem(std::move(categories));
+    }
+}
