@@ -40,6 +40,8 @@ void User::addItem(const std::string &shoppingList, std::unique_ptr<Item> item) 
 
 void User::update(std::string listName, int creatorId) {
     auto it = lists.find(listName);
+
+    // se la lista è stata modificata da un altro utente allora notifica l'utente se è abbonato alla lista
     if (it != lists.end())
         std::cout << this->name << " something changes in " << listName << ", check it!\n" << std::endl;
 }

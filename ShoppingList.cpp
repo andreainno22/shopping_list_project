@@ -31,8 +31,9 @@ void ShoppingList::removeItem(const std::string &i, std::string category) {
 
     auto it = list.find(category);
     if (it != list.end()) {
-        // se esiste la categoria allora
+        // se esiste la categoria allora cerco l'item
         auto ptr = it->second.find(i);
+        // se esiste l'item lo elimino
         if (ptr != it->second.end()) {
             it->second.erase(i);
             notify();
@@ -54,6 +55,7 @@ ShoppingList::~ShoppingList() {}
 
 void ShoppingList::notify() {
 
+    // notifica ad ogni user abbonato alla lista che è stata modificata
     for (auto itr = std::begin(users); itr != std::end(users); itr++) {
         (*itr)->update(this->name, this->creatorId);
     }
@@ -118,6 +120,8 @@ bool ShoppingList::checkUser(std::shared_ptr<AbstractUser> user) {
 }
 
 void ShoppingList::reorderItem(std::list<std::string> categories) {
+
+    // riordina la mappa secondo l'ordine specificato nella lista categories
 
     std::map<std::string, std::map<std::string, std::shared_ptr<Item>>> newList;
     for (auto &it: categories) {

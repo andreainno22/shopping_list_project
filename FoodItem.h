@@ -18,10 +18,6 @@ public:
             Item(std::move(name), amount), category(std::move(category)), forFridge(forFridge), frozen(frozen),
             kilos(kilos) {};
 
-    bool getFrozen() const {
-        return frozen;
-    }
-
     void getInfo() override;
 
     std::string getCategory() const override;
