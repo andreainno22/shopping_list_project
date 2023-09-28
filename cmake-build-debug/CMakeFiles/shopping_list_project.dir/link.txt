@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/shopping_list_project.dir/main.cpp.o  -o shopping_list_project  libcore.a 
