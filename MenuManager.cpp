@@ -21,7 +21,9 @@ void MenuManager::start() {
             std::cin >> surname;
             std::shared_ptr<User> user = std::make_shared<User>(name, surname, catalogue);
             std::cout << "Welcome " << user->getName() << " " << user->getSurname() << std::endl;
-            showMenu(user);
+            logged = true;
+            while(logged)
+                  showMenu(user);
             break;
         }
         case 2:
@@ -54,7 +56,6 @@ void MenuManager::showMenu(std::shared_ptr<User> user) {
             std::string name;
             std::cin >> name;
             user->createShoppingList(name);
-            showMenu(user);
             break;
         }
         case 2: {
@@ -62,14 +63,14 @@ void MenuManager::showMenu(std::shared_ptr<User> user) {
             std::string name;
             std::cin >> name;
             user->addShoppingList(name);
-            showMenu(user);
+            break;
         }
         case 3: {
             std::cout << "Insert the name of the list you want to delete:" << std::endl;
             std::string name;
             std::cin >> name;
             user->deleteShoppingList(name);
-            showMenu(user);
+            break;
         }
         case 4: {
             std::cout << "Insert the name of the list you want to add an item to:" << std::endl;
@@ -100,7 +101,7 @@ void MenuManager::showMenu(std::shared_ptr<User> user) {
                 user->addItem(name, std::make_unique<FoodItem>(category, itemName, quantity, frozen, inFridge, kilos));
             } else
                 user->addItem(name, std::make_unique<NotFoodItem>(category, itemName, quantity));
-            showMenu(user);
+            break;
         }
         case 5: {
             std::cout << "Insert the name of the list you want to remove an item from:" << std::endl;
@@ -113,7 +114,7 @@ void MenuManager::showMenu(std::shared_ptr<User> user) {
             std::string itemName;
             std::cin >> itemName;
             user->removeItem(category, itemName, name);
-            showMenu(user);
+            break;
         }
         case 6: {
             std::cout << "Insert the name of the list you want to sign an item from:" << std::endl;
@@ -126,7 +127,7 @@ void MenuManager::showMenu(std::shared_ptr<User> user) {
             std::string itemName;
             std::cin >> itemName;
             user->buyItem(category, itemName, name);
-            showMenu(user);
+            break;
         }
         case 7: {
             std::cout << "Insert the name of the list you want to reorder:" << std::endl;
@@ -139,24 +140,27 @@ void MenuManager::showMenu(std::shared_ptr<User> user) {
                 categories.push_back(category);
             }
             user->reorderItem(categories, name);
-            showMenu(user);
+            break;
         }
         case 8: {
             user->printAllLists();
-            showMenu(user);
+            break;
         }
         case 9: {
             std::cout << "Insert the name of the list you want to see:" << std::endl;
             std::string name;
             std::cin >> name;
             user->printList(name);
-            showMenu(user);
+            break;
         }
         case 10: {
             user->showCatalogue();
-            showMenu(user);
+            break;
         }
-        case 11:
-            start();
+        case 11: {
+            logged = false;
+            break;
+        }
     }
+    return;
 }
