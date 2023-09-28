@@ -12,35 +12,25 @@
 
 class FoodItem : public Item {
 public:
-    FoodItem(std::string category, std::string name, int amount = 1, bool Frozen = false, bool ForFridge = false, float kilos = 0)
+    FoodItem(std::string category, std::string name, int amount = 1, bool frozen = false, bool forFridge = false,
+             float kilos = 0)
             :
-            Item(std::move(name), amount), category(std::move(category)), forFridge(ForFridge), frozen(Frozen), kilos(kilos) {};
+            Item(std::move(name), amount), category(std::move(category)), forFridge(forFridge), frozen(frozen),
+            kilos(kilos) {};
 
     bool getFrozen() const {
         return frozen;
-    }
-
-    void setFrozen(bool frozen) {
-        FoodItem::frozen = frozen;
-    }
-
-    bool getForFridge() const {
-        return forFridge;
-    }
-
-    void setForFridge(bool forFridge) {
-        FoodItem::forFridge = forFridge;
     }
 
     void getInfo() override;
 
     std::string getCategory() const override;
 
-    bool getToBuy() const override{
+    bool getToBuy() const override {
         return toBuy;
     }
 
-    void setToBuy(bool toBuy) override{
+    void setToBuy(bool toBuy) override {
         this->toBuy = toBuy;
     }
 

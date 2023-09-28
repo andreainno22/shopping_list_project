@@ -5,12 +5,11 @@
 #include <iostream>
 #include "ShoppingList.h"
 
-//l'aggiunta di un oggetto comporta il riordino della lista in base alle categorie
 void ShoppingList::addItem(std::shared_ptr<Item> i) {
     auto it = list.find(i->getCategory());
 
     if (it != list.end()) {
-        // significa che è già stato inserito un elemento di questa categoria, allora basta aggiungere l'item alla mappa degli item
+        // significa che è già stato inserito un elemento di questa categoria, allora basta aggiungere l'item alla mappa degli item di quella categoria
         auto ptr = it->second.find(i->getName());
 
         // se è già presente un item con quel nome si sostituisce con quello nuovo
@@ -18,6 +17,7 @@ void ShoppingList::addItem(std::shared_ptr<Item> i) {
             it->second.erase(ptr);
         it->second.insert(std::make_pair(i->getName(), std::move(i)));
     } else {
+
         // ancora non c'è un elemento di questa categoria, bisogna crearne una nuova
         std::map<std::string, std::shared_ptr<Item>> m;
         auto itemCategory = i->getCategory();
@@ -31,6 +31,7 @@ void ShoppingList::removeItem(const std::string &i, std::string category) {
 
     auto it = list.find(category);
     if (it != list.end()) {
+        // se esiste la categoria allora
         auto ptr = it->second.find(i);
         if (ptr != it->second.end()) {
             it->second.erase(i);
@@ -47,10 +48,6 @@ void ShoppingList::registerUser(std::shared_ptr<AbstractUser> user) {
 
 std::string ShoppingList::getName() const {
     return name;
-}
-
-void ShoppingList::setName(const std::string &name) {
-    ShoppingList::name = name;
 }
 
 ShoppingList::~ShoppingList() {}

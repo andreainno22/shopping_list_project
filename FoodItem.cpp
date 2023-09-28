@@ -5,6 +5,7 @@
 #include <iostream>
 #include "FoodItem.h"
 
+// prints all the infos about the item
 
 void FoodItem::getInfo() {
     std::cout << name << ", " << kilos << " kilos, amount: " << amount << ", to buy: " << std::boolalpha << getToBuy();

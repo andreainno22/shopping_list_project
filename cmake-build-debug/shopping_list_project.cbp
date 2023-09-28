@@ -474,6 +474,9 @@
 		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/test/CatalogueTest.cpp">
 			<Option target="runAllTests"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/test/MenuManagerTest.cpp">
+			<Option target="runAllTests"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/andrea/CLionProjects/shopping_list_project/test/ShoppingListTest.cpp">
 			<Option target="runAllTests"/>
 		</Unit>

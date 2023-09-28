@@ -6,6 +6,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 set(SOURCE_TEST_FILES runAllTests.cpp
         UserTest.cpp
         ShoppingListTest.cpp
-        CatalogueTest.cpp)
+        CatalogueTest.cpp
+        MenuManagerTest.cpp)
 add_executable(runAllTests ${SOURCE_TEST_FILES})
 target_link_libraries(runAllTests gtest gtest_main core)

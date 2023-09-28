@@ -5,36 +5,44 @@
 #include "MenuManager.h"
 #include "NotFoodItem.h"
 
+// manage the user log
+
 void MenuManager::start() {
-    int choice;
-    std::cout << "Welcome to the Shopping List Manager!" << std::endl;
-    std::cout << "What do you want to do?" << std::endl;
-    std::cout << "1. Login" << std::endl;
-    std::cout << "2. Exit" << std::endl;
-    std::cin >> choice;
-    switch (choice) {
-        case 1: {
-            std::string name, surname;
-            std::cout << "Insert your name: ";
-            std::cin >> name;
-            std::cout << "Insert your surname: ";
-            std::cin >> surname;
-            std::shared_ptr<User> user = std::make_shared<User>(name, surname, catalogue);
-            std::cout << "Welcome " << user->getName() << " " << user->getSurname() << std::endl;
-            logged = true;
-            while(logged)
-                  showMenu(user);
-            break;
+    while (sessionOpen) {
+        int choice;
+        std::cout << "Welcome to the Shopping List Manager!" << std::endl;
+        std::cout << "What do you want to do?" << std::endl;
+        std::cout << "1. Login" << std::endl;
+        std::cout << "2. Exit" << std::endl;
+        std::cin >> choice;
+        switch (choice) {
+            case 1: {
+                std::string name, surname;
+                std::cout << "Insert your name: ";
+                std::cin >> name;
+                std::cout << "Insert your surname: ";
+                std::cin >> surname;
+                std::shared_ptr<User> user = std::make_shared<User>(name, surname, catalogue);
+                std::cout << "Welcome " << user->getName() << " " << user->getSurname() << std::endl;
+                logged = true;
+                while (logged)
+                    showMenu(user);
+                break;
+            }
+            case 2: {
+                sessionOpen = false;
+                break;
+            }
+            default:
+                std::cout << "Invalid choice" << std::endl;
         }
-        case 2:
-            return;
-        default:
-            std::cout << "Invalid choice" << std::endl;
     }
-    start();
 }
 
-void MenuManager::showMenu(std::shared_ptr<User> user) {
+
+// shows the menu and manage the user choice
+
+void MenuManager::showMenu(const std::shared_ptr<User>& user) {
     int choice;
     std::cout << "You can:" << std::endl;
     std::cout << "1. Create a new shopping list" << std::endl;
@@ -161,6 +169,7 @@ void MenuManager::showMenu(std::shared_ptr<User> user) {
             logged = false;
             break;
         }
+        default:
+            std::cout << "Invalid choice" << std::endl;
     }
-    return;
 }

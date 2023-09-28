@@ -34,8 +34,6 @@ public:
 
     std::string getName() const override;
 
-    void setName(const std::string &name);
-
     void print() override;
 
     bool checkItem(std::string category, std::string name) override;

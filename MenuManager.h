@@ -12,18 +12,26 @@
 #include "ShoppingListCatalogue.h"
 #include "User.h"
 
-
 class MenuManager {
 public:
-    explicit MenuManager(std::shared_ptr<ShoppingListCatalogue> catalogue): catalogue(std::move(catalogue)), logged(false){};
+    explicit MenuManager(std::shared_ptr<ShoppingListCatalogue> catalogue): catalogue(std::move(catalogue)), logged(false), sessionOpen(true){};
 
     void start();
 
-    void showMenu(std::shared_ptr<User> user);
+    void showMenu(const std::shared_ptr<User>& user);
+
+    [[nodiscard]] bool isLogged() const {
+        return logged;
+    }
+
+    [[nodiscard]] bool isSessionOpen() const {
+        return sessionOpen;
+    }
 
 private:
     std::shared_ptr<ShoppingListCatalogue> catalogue;
     bool logged;
+    bool sessionOpen;
 
 };
 
