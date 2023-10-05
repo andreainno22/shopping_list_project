@@ -18,8 +18,8 @@
 
 class User : public AbstractUser {
 public:
-    User(std::string name, std::string surname, std::shared_ptr<ShoppingListCatalogue> c) : name(std::move(name)),
-                                                                                            surname(std::move(surname)),
+    User(const std::string &name, const std::string &surname, std::shared_ptr<ShoppingListCatalogue> c) : name(name),
+                                                                                            surname(surname),
                                                                                             catalogue(std::move(c)) {
         id = globalId++;
     }
@@ -33,35 +33,35 @@ public:
 
     ~User() override;
 
-    void update(std::string listName, int creatorId) override;
+    void update(const std::string &listName, int creatorId) override;
 
-    void createShoppingList(std::string listName);
+    void createShoppingList(const std::string &listName);
 
-    void deleteShoppingList(std::string name);
+    void deleteShoppingList(const std::string &name);
 
-    void addShoppingList(std::string name);
+    void addShoppingList(const std::string &name);
 
     void addItem(const std::string &shoppingList, std::unique_ptr<Item> item);
 
-    void removeItem(std::string category, std::string name, std::string list);
+    void removeItem(const std::string& category, const std::string &name, const std::string &list);
 
-    void printList(std::string list);
+    void printList(const std::string &list) const;
 
-    void showCatalogue();
+    void showCatalogue() const;
 
-    void buyItem(std::string category, std::string name, std::string list);
+    void buyItem(const std::string& category, const std::string& name, const std::string& list);
 
-    bool checkList(std::string list);
+    bool checkList(const std::string& list) const;
 
-    bool checkItem(std::string category, std::string name, std::string list);
+    bool checkItem(const std::string& category, const std::string& name, const std::string& list) const;
 
-    void reorderItem(std::list<std::string> categories, std::string list);
+    void reorderItem(std::list<std::string>& categories, const std::string& list);
 
     const std::string &getName() const;
 
     const std::string &getSurname() const;
 
-    const void printAllLists();
+    const void printAllLists() const;
 
 private:
     void attach(std::shared_ptr<AbstractShoppingList> listName) override;

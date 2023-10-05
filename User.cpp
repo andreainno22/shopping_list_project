@@ -8,7 +8,7 @@
 
 int User::globalId = 0;
 
-void User::createShoppingList(std::string listName) {
+void User::createShoppingList(const std::string& listName) {
     std::shared_ptr<ShoppingList> s(new ShoppingList(listName, this->id));
     this->catalogue->addShoppingList(s);
     std::shared_ptr<AbstractShoppingList> s1 = std::move(std::dynamic_pointer_cast<AbstractShoppingList>(s));
@@ -16,7 +16,7 @@ void User::createShoppingList(std::string listName) {
     attach(s1);
 }
 
-void User::deleteShoppingList(std::string name) {
+void User::deleteShoppingList(const std::string& name) {
 
     auto it = lists.find(name);
     if (it != lists.end()) {
@@ -38,7 +38,7 @@ void User::addItem(const std::string &shoppingList, std::unique_ptr<Item> item) 
 
 }
 
-void User::update(std::string listName, int creatorId) {
+void User::update(const std::string& listName, int creatorId) {
     auto it = lists.find(listName);
 
     // se la lista è stata modificata da un altro utente allora notifica l'utente se è abbonato alla lista
@@ -59,7 +59,7 @@ void User::detach(std::shared_ptr<AbstractShoppingList> listName) {
     listName->removeUser(shared_from_this());
 }
 
-void User::printList(std::string list) {
+void User::printList(const std::string& list) const {
 
     auto it = lists.find(list);
     if (it != lists.end())
@@ -68,12 +68,12 @@ void User::printList(std::string list) {
         std::cout << name << ", no list named " + list + " in your collection\n" << std::endl;
 }
 
-void User::showCatalogue() {
+void User::showCatalogue() const{
     catalogue->printAll();
 
 }
 
-void User::addShoppingList(std::string name) {
+void User::addShoppingList(const std::string& name) {
 
     std::shared_ptr<ShoppingList> newList = catalogue->findList(name);
     if (newList == nullptr)
@@ -85,7 +85,7 @@ void User::addShoppingList(std::string name) {
     }
 }
 
-void User::removeItem(const std::string category, const std::string name, const std::string list) {
+void User::removeItem(const std::string& category, const std::string& name, const std::string& list) {
 
     auto it = lists.find(list);
     if (it != lists.end())
@@ -93,7 +93,7 @@ void User::removeItem(const std::string category, const std::string name, const 
 
 }
 
-void User::buyItem(std::string category, std::string name, std::string list) {
+void User::buyItem(const std::string& category, const std::string& name, const std::string& list) {
 
         auto it = lists.find(list);
         if (it != lists.end())
@@ -101,7 +101,7 @@ void User::buyItem(std::string category, std::string name, std::string list) {
 
 }
 
-bool User::checkList(std::string list) {
+bool User::checkList(const std::string& list) const{
         auto it = lists.find(list);
         if (it != lists.end())
             return true;
@@ -109,7 +109,7 @@ bool User::checkList(std::string list) {
             return false;
 }
 
-bool User::checkItem(std::string category, std::string name, std::string list) {
+bool User::checkItem(const std::string& category, const std::string& name, const std::string& list) const{
         auto it = lists.find(list);
         if (it != lists.end()) {
             return(it->second->checkItem(std::move(category), std::move(name)));
@@ -122,10 +122,10 @@ int User::getId() const {
     return id;
 }
 
-void User::reorderItem(std::list<std::string> categories, std::string list) {
+void User::reorderItem(std::list<std::string>& categories, const std::string& list) {
     auto it = lists.find(list);
     if (it != lists.end()) {
-        it->second->reorderItem(std::move(categories));
+        it->second->reorderItem(categories);
     }
 }
 
@@ -137,7 +137,7 @@ const std::string &User::getSurname() const {
     return surname;
 }
 
-const void User::printAllLists() {
+const void User::printAllLists() const{
     for (auto &it: lists)
         printList(it.first);
 }

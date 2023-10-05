@@ -15,7 +15,7 @@ class AbstractUser : public std::enable_shared_from_this<AbstractUser> {
 public:
     virtual ~AbstractUser() = default;
 
-    virtual void update(std::string listName, int creatorId) = 0;
+    virtual void update(const std::string &listName, int creatorId) = 0;
 
     virtual void attach(std::shared_ptr<AbstractShoppingList> listName) = 0;
 

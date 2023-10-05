@@ -12,9 +12,9 @@
 
 class NotFoodItem : public Item {
 public:
-    NotFoodItem(std::string category, std::string name, int amount = 1) : category(category), Item(std::move(name), amount) {}
+    NotFoodItem(const std::string& category, const std::string& name, int amount = 1) : category(category), Item(name, amount) {}
 
-    void getInfo() override;
+    void getInfo() const override;
 
     bool getToBuy() const override{
         return toBuy;
@@ -24,7 +24,7 @@ public:
         this->toBuy = toBuy;
     }
 
-    std::string getCategory() const override;
+    const std::string getCategory() const override;
 
 private:
     std::string category;

@@ -14,7 +14,7 @@
 
 class MenuManager {
 public:
-    explicit MenuManager(std::shared_ptr<ShoppingListCatalogue> catalogue): catalogue(std::move(catalogue)), logged(false), sessionOpen(true){};
+    explicit MenuManager(std::shared_ptr<ShoppingListCatalogue>& catalogue): catalogue(std::move(catalogue)), logged(false), sessionOpen(true){};
 
     void start();
 

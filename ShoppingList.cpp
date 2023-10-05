@@ -27,7 +27,7 @@ void ShoppingList::addItem(std::shared_ptr<Item> i) {
     notify();
 }
 
-void ShoppingList::removeItem(const std::string &i, std::string category) {
+void ShoppingList::removeItem(const std::string &i, const std::string &category) {
 
     auto it = list.find(category);
     if (it != list.end()) {
@@ -67,7 +67,7 @@ void ShoppingList::removeUser(std::shared_ptr<AbstractUser> user) {
 
 }
 
-void ShoppingList::print() {
+void ShoppingList::print() const {
 
     std::string result;
     for (char c: name) {
@@ -84,7 +84,7 @@ void ShoppingList::print() {
     std::cout << "---------------------------------\n" << std::endl;
 }
 
-void ShoppingList::buyItem(const std::string &i, std::string category) {
+void ShoppingList::buyItem(const std::string &i, const std::string &category) {
 
     auto it = list.find(category);
     if (it != list.end()) {
@@ -99,7 +99,7 @@ void ShoppingList::buyItem(const std::string &i, std::string category) {
 
 }
 
-bool ShoppingList::checkItem(std::string category, std::string name) {
+bool ShoppingList::checkItem(const std::string &category, const std::string &name) const{
     auto it = list.find(category);
     if (it != list.end()) {
         auto ptr = it->second.find(name);
@@ -119,7 +119,7 @@ bool ShoppingList::checkUser(std::shared_ptr<AbstractUser> user) {
     return false;
 }
 
-void ShoppingList::reorderItem(std::list<std::string> categories) {
+void ShoppingList::reorderItem(std::list<std::string> &categories) {
 
     // riordina la mappa secondo l'ordine specificato nella lista categories
 

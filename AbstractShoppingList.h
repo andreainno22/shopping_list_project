@@ -21,19 +21,19 @@ public:
 
     virtual void removeUser(std::shared_ptr<AbstractUser> user) = 0;
 
-    virtual void buyItem(const std::string &i, std::string category) = 0;
+    virtual void buyItem(const std::string &i, const std::string& category) = 0;
 
     virtual void notify() = 0;
 
-    virtual std::string getName() const = 0;
+    virtual const std::string getName() const = 0;
 
-    virtual void print() = 0;
+    virtual void print() const = 0;
 
-    virtual void removeItem(const std::string &i, std::string category) = 0;
+    virtual void removeItem(const std::string &i, const std::string& category) = 0;
 
-    virtual bool checkItem(std::string category, std::string name) = 0;
+    virtual bool checkItem(const std::string& category, const std::string& name) const = 0;
 
-    virtual void reorderItem(std::list<std::string> categories) = 0;
+    virtual void reorderItem(std::list<std::string>& categories) = 0;
 
 };
 

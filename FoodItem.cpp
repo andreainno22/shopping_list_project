@@ -7,8 +7,8 @@
 
 // prints all the infos about the item
 
-void FoodItem::getInfo() {
-    std::cout << name << ", " << kilos << " kilos, amount: " << amount << ", to buy: " << std::boolalpha << getToBuy();
+void FoodItem::getInfo() const{
+    std::cout << name << ", " << kilos << " kilos, quantity: " << quantity << ", to buy: " << std::boolalpha << getToBuy();
     if(forFridge)
         std::cout << ", for fridge";
     if(frozen)
@@ -18,6 +18,6 @@ void FoodItem::getInfo() {
 
 }
 
-std::string FoodItem::getCategory() const {
+const std::string FoodItem::getCategory() const {
     return category;
 }

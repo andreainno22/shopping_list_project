@@ -18,29 +18,29 @@
 // concrete subject
 class ShoppingList : public AbstractShoppingList {
 public:
-    ShoppingList(std::string name, int creatorId) : name(std::move(name)), creatorId(creatorId) {}
+    ShoppingList(const std::string &name, int creatorId) : name(name), creatorId(creatorId) {}
 
     virtual ~ShoppingList();
 
     void addItem(std::shared_ptr<Item> i);
 
-    void removeItem(const std::string &i, std::string category) override;
+    void removeItem(const std::string &i, const std::string & category) override;
 
-    void buyItem(const std::string &i, std::string category) override;
+    void buyItem(const std::string &i, const std::string &category) override;
 
     void registerUser(std::shared_ptr<AbstractUser> user) override;
 
     void removeUser(std::shared_ptr<AbstractUser> user) override;
 
-    std::string getName() const override;
+    const std::string getName() const override;
 
-    void print() override;
+    void print()const override;
 
-    bool checkItem(std::string category, std::string name) override;
+    bool checkItem(const std::string& category, const std::string &name) const override;
 
     bool checkUser(std::shared_ptr<AbstractUser> user);
 
-    void reorderItem(std::list<std::string> categories) override;
+    void reorderItem(std::list<std::string>& categories) override;
 
     std::map<std::string, std::map<std::string, std::shared_ptr<Item>>> getList() const;
 
