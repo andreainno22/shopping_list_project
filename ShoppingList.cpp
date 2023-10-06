@@ -47,7 +47,7 @@ void ShoppingList::registerUser(std::shared_ptr<AbstractUser> user) {
     this->users.push_back(std::move(user));
 }
 
-std::string ShoppingList::getName() const {
+const std::string ShoppingList::getName() const {
     return name;
 }
 
@@ -111,30 +111,10 @@ bool ShoppingList::checkItem(const std::string &category, const std::string &nam
         return false;
 }
 
-bool ShoppingList::checkUser(std::shared_ptr<AbstractUser> user) {
+bool ShoppingList::checkUser(std::shared_ptr<AbstractUser> user) const{
     for (auto &it: users) {
         if (it->getId() == user->getId())
             return true;
     }
     return false;
-}
-
-void ShoppingList::reorderItem(std::list<std::string> &categories) {
-
-    // riordina la mappa secondo l'ordine specificato nella lista categories
-
-    std::map<std::string, std::map<std::string, std::shared_ptr<Item>>> newList;
-    for (auto &it: categories) {
-        auto ptr = list.find(it);
-        if (ptr != list.end()) {
-            newList.insert(std::make_pair(it, std::move(ptr->second)));
-        }
-    }
-    list = std::move(newList);
-    notify();
-
-}
-
-std::map<std::string, std::map<std::string, std::shared_ptr<Item>>> ShoppingList::getList() const {
-    return list;
 }

@@ -33,8 +33,6 @@ public:
 
     virtual bool checkItem(const std::string& category, const std::string& name) const = 0;
 
-    virtual void reorderItem(std::list<std::string>& categories) = 0;
-
 };
 
 

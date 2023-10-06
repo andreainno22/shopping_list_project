@@ -18,15 +18,15 @@
 // concrete subject
 class ShoppingList : public AbstractShoppingList {
 public:
-    ShoppingList(const std::string &name, int creatorId) : name(name), creatorId(creatorId) {}
+    ShoppingList(const std::string& name, int creatorId) : name(name), creatorId(creatorId) {}
 
     virtual ~ShoppingList();
 
     void addItem(std::shared_ptr<Item> i);
 
-    void removeItem(const std::string &i, const std::string & category) override;
+    void removeItem(const std::string& i, const std::string& category) override;
 
-    void buyItem(const std::string &i, const std::string &category) override;
+    void buyItem(const std::string& i, const std::string& category) override;
 
     void registerUser(std::shared_ptr<AbstractUser> user) override;
 
@@ -34,15 +34,12 @@ public:
 
     const std::string getName() const override;
 
-    void print()const override;
+    void print() const override;
 
-    bool checkItem(const std::string& category, const std::string &name) const override;
+    bool checkItem(const std::string& category, const std::string& name) const override;
 
-    bool checkUser(std::shared_ptr<AbstractUser> user);
+    bool checkUser(std::shared_ptr<AbstractUser> user) const;
 
-    void reorderItem(std::list<std::string>& categories) override;
-
-    std::map<std::string, std::map<std::string, std::shared_ptr<Item>>> getList() const;
 
 private:
     void notify() override;

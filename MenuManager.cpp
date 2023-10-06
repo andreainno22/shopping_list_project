@@ -14,7 +14,13 @@ void MenuManager::start() {
         std::cout << "What do you want to do?" << std::endl;
         std::cout << "1. Login" << std::endl;
         std::cout << "2. Exit" << std::endl;
-        std::cin >> choice;
+        while (!(std::cin >> choice)) {
+            std::cout << "1. Login" << std::endl;
+            std::cout << "2. Exit" << std::endl;
+            std::cout << "Wrong format." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
         switch (choice) {
             case 1: {
                 std::string name, surname;
@@ -42,7 +48,7 @@ void MenuManager::start() {
 
 // shows the menu and manage the user choice
 
-void MenuManager::showMenu(const std::shared_ptr<User>& user) {
+void MenuManager::showMenu(const std::shared_ptr<User> &user) {
     int choice;
     std::cout << "You can:" << std::endl;
     std::cout << "1. Create a new shopping list" << std::endl;
@@ -51,11 +57,10 @@ void MenuManager::showMenu(const std::shared_ptr<User>& user) {
     std::cout << "4. Add an item" << std::endl;
     std::cout << "5. Remove an item" << std::endl;
     std::cout << "6. Sign an item bought" << std::endl;
-    std::cout << "7. Reorder your shopping lists" << std::endl;
-    std::cout << "8. See all your shopping lists" << std::endl;
-    std::cout << "9. See a single list by name" << std::endl;
-    std::cout << "10. See all the shopping lists in the general catalogue" << std::endl;
-    std::cout << "11. Exit" << std::endl;
+    std::cout << "7. See all your shopping lists" << std::endl;
+    std::cout << "8. See a single list by name" << std::endl;
+    std::cout << "9. See all the shopping lists in the general catalogue" << std::endl;
+    std::cout << "10. Exit" << std::endl;
     std::cin >> choice;
 
     switch (choice) {
@@ -92,20 +97,49 @@ void MenuManager::showMenu(const std::shared_ptr<User>& user) {
             std::cin >> itemName;
             std::cout << "Insert the quantity of the item you want to add:" << std::endl;
             int quantity;
-            std::cin >> quantity;
+            if (!(std::cin >> quantity)) {
+                std::cout << "Wrong format." << std::endl;
+                std::cin.clear(); // Resetta lo stato di errore di cin
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
+                                '\n'); // Ignora il resto dell'input fino a quando non premi "Invio"
+                break;
+            }
             std::cout << "Is it food? (1 for yes, 0 for no)" << std::endl;
             int food;
-            std::cin >> food;
+            if (!(std::cin >> food)) {
+                std::cout << "Wrong format." << std::endl;
+                std::cin.clear(); // Resetta lo stato di errore di cin
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                break;
+            }
             if (food == 1) {
                 std::cout << "Is it a fridge food? (1 for yes, 0 for no)" << std::endl;
                 int inFridge;
-                std::cin >> inFridge;
+                if (!(std::cin >> inFridge)) {
+                    std::cout << "Wrong format." << std::endl;
+                    std::cin.clear(); // Resetta lo stato di errore di cin
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
+                                    '\n'); // Ignora il resto dell'input fino a quando non premi "Invio"
+                    break;
+                }
                 std::cout << "Is it a frozen food? (1 for yes, 0 for no)" << std::endl;
                 int frozen;
-                std::cin >> frozen;
+                if (!(std::cin >> frozen)) {
+                    std::cout << "Wrong format." << std::endl;
+                    std::cin.clear(); // Resetta lo stato di errore di cin
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
+                                    '\n'); // Ignora il resto dell'input fino a quando non premi "Invio"
+                    break;
+                }
                 std::cout << "Insert the kilos (optional, 0 for not provided):" << std::endl;
                 int kilos;
-                std::cin >> kilos;
+                if (!(std::cin >> kilos)) {
+                    std::cout << "Wrong format." << std::endl;
+                    std::cin.clear(); // Resetta lo stato di errore di cin
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
+                                    '\n'); // Ignora il resto dell'input fino a quando non premi "Invio"
+                    break;
+                }
                 user->addItem(name, std::make_unique<FoodItem>(category, itemName, quantity, frozen, inFridge, kilos));
             } else
                 user->addItem(name, std::make_unique<NotFoodItem>(category, itemName, quantity));
@@ -137,35 +171,23 @@ void MenuManager::showMenu(const std::shared_ptr<User>& user) {
             user->buyItem(category, itemName, name);
             break;
         }
+
         case 7: {
-            std::cout << "Insert the name of the list you want to reorder:" << std::endl;
-            std::string name;
-            std::cin >> name;
-            std::cout << "Insert the categories in the order you want them to be: (end to stop)" << std::endl;
-            std::list<std::string> categories;
-            std::string category;
-            while (std::cin >> category && category != "end") {
-                categories.push_back(category);
-            }
-            user->reorderItem(categories, name);
-            break;
-        }
-        case 8: {
             user->printAllLists();
             break;
         }
-        case 9: {
+        case 8: {
             std::cout << "Insert the name of the list you want to see:" << std::endl;
             std::string name;
             std::cin >> name;
             user->printList(name);
             break;
         }
-        case 10: {
+        case 9: {
             user->showCatalogue();
             break;
         }
-        case 11: {
+        case 10: {
             logged = false;
             break;
         }

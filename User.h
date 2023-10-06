@@ -55,8 +55,6 @@ public:
 
     bool checkItem(const std::string& category, const std::string& name, const std::string& list) const;
 
-    void reorderItem(std::list<std::string>& categories, const std::string& list);
-
     const std::string &getName() const;
 
     const std::string &getSurname() const;

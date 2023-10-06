@@ -14,13 +14,11 @@ public:
 
     virtual ~ShoppingListCatalogue();
 
-    void addShoppingList(const std::shared_ptr<ShoppingList>& s);
+    void addShoppingList(std::shared_ptr<ShoppingList> s);
 
-    void removeShoppingList(std::string s);
+    void printAll() const;
 
-    void printAll();
-
-    std::shared_ptr<ShoppingList> findList(const std::string& listName);
+    std::shared_ptr<ShoppingList> findList(const std::string& listName) const;
 
 private:
     std::map<std::string , std::shared_ptr<ShoppingList>> catalogue;

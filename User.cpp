@@ -35,7 +35,6 @@ void User::addItem(const std::string &shoppingList, std::unique_ptr<Item> item) 
         s->addItem(std::move(item));
     } else
         std::cout << "the list " + shoppingList + " doesn't exists" << std::endl;
-
 }
 
 void User::update(const std::string& listName, int creatorId) {
@@ -120,13 +119,6 @@ bool User::checkItem(const std::string& category, const std::string& name, const
 
 int User::getId() const {
     return id;
-}
-
-void User::reorderItem(std::list<std::string>& categories, const std::string& list) {
-    auto it = lists.find(list);
-    if (it != lists.end()) {
-        it->second->reorderItem(categories);
-    }
 }
 
 const std::string &User::getName() const {
