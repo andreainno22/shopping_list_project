@@ -111,7 +111,7 @@ bool ShoppingList::checkItem(const std::string &category, const std::string &nam
         return false;
 }
 
-bool ShoppingList::checkUser(std::shared_ptr<AbstractUser> user) const{
+bool ShoppingList::checkUser(const std::shared_ptr<AbstractUser>& user) const{
     for (auto &it: users) {
         if (it->getId() == user->getId())
             return true;

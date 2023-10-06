@@ -38,7 +38,7 @@ public:
 
     bool checkItem(const std::string& category, const std::string& name) const override;
 
-    bool checkUser(std::shared_ptr<AbstractUser> user) const;
+    bool checkUser(const std::shared_ptr<AbstractUser>& user) const;
 
 
 private:
