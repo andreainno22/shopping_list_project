@@ -61,7 +61,12 @@ void MenuManager::showMenu(const std::shared_ptr<User> &user) {
     std::cout << "8. See a single list by name" << std::endl;
     std::cout << "9. See all the shopping lists in the general catalogue" << std::endl;
     std::cout << "10. Exit" << std::endl;
-    std::cin >> choice;
+    while (!(std::cin >> choice)) {
+        std::cout << "Wrong format." << std::endl;
+        std::cin.clear(); // Resetta lo stato di errore di cin
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
+                        '\n'); // Ignora il resto dell'input fino a quando non premi "Invio"
+    }
 
     switch (choice) {
         case 1: {
