@@ -121,15 +121,15 @@ int User::getId() const {
     return id;
 }
 
-const std::string &User::getName() const {
+const std::string& User::getName() const {
     return name;
+}
+
+void User::printAllLists() const{
+    for (auto &it: lists)
+        printList(it.first);
 }
 
 const std::string &User::getSurname() const {
     return surname;
-}
-
-const void User::printAllLists() const{
-    for (auto &it: lists)
-        printList(it.first);
 }

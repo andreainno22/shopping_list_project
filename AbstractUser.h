@@ -10,6 +10,7 @@
 #include "AbstractShoppingList.h"
 
 class AbstractShoppingList;
+
 // Observer
 class AbstractUser : public std::enable_shared_from_this<AbstractUser> {
 public:

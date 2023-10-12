@@ -10,7 +10,7 @@
 
 class ShoppingListCatalogue {
 public:
-    ShoppingListCatalogue()= default;
+    ShoppingListCatalogue() = default;
 
     virtual ~ShoppingListCatalogue();
 
@@ -18,10 +18,10 @@ public:
 
     void printAll() const;
 
-    std::shared_ptr<ShoppingList> findList(const std::string& listName) const;
+    std::shared_ptr<ShoppingList> findList(const std::string &listName) const;
 
 private:
-    std::map<std::string , std::shared_ptr<ShoppingList>> catalogue;
+    std::map<std::string, std::shared_ptr<ShoppingList>> catalogue;
 
 };
 

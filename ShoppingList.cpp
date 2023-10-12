@@ -47,7 +47,7 @@ void ShoppingList::registerUser(std::shared_ptr<AbstractUser> user) {
     this->users.push_back(std::move(user));
 }
 
-const std::string ShoppingList::getName() const {
+const std::string &ShoppingList::getName() const {
     return name;
 }
 
@@ -99,7 +99,7 @@ void ShoppingList::buyItem(const std::string &i, const std::string &category) {
 
 }
 
-bool ShoppingList::checkItem(const std::string &category, const std::string &name) const{
+bool ShoppingList::checkItem(const std::string &category, const std::string &name) const {
     auto it = list.find(category);
     if (it != list.end()) {
         auto ptr = it->second.find(name);
@@ -111,7 +111,7 @@ bool ShoppingList::checkItem(const std::string &category, const std::string &nam
         return false;
 }
 
-bool ShoppingList::checkUser(const std::shared_ptr<AbstractUser>& user) const{
+bool ShoppingList::checkUser(const std::shared_ptr<AbstractUser> &user) const {
     for (auto &it: users) {
         if (it->getId() == user->getId())
             return true;

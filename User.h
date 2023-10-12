@@ -55,11 +55,11 @@ public:
 
     bool checkItem(const std::string& category, const std::string& name, const std::string& list) const;
 
-    const std::string &getName() const;
+    const std::string& getName() const;
 
     const std::string &getSurname() const;
 
-    const void printAllLists() const;
+    void printAllLists() const;
 
 private:
     void attach(std::shared_ptr<AbstractShoppingList> listName) override;

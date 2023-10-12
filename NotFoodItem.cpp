@@ -7,10 +7,11 @@
 
 // prints all the infos about the item
 
-void NotFoodItem::getInfo() const{
-    std::cout << name << ", quantity: " << quantity << ", to buy: " << std::boolalpha << getToBuy() << "\n" << std::endl;
+void NotFoodItem::getInfo() const {
+    std::cout << name << ", quantity: " << quantity << ", to buy: " << std::boolalpha << getToBuy() << "\n"
+              << std::endl;
 }
 
-const std::string NotFoodItem::getCategory() const {
+const std::string &NotFoodItem::getCategory() const {
     return category;
 }

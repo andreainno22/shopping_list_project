@@ -11,9 +11,9 @@
 
 class Item { ;
 public:
-    explicit Item(const std::string& name, int amount = 1) : quantity(amount) , toBuy(true), name(name){}
+    explicit Item(const std::string &name, int amount = 1) : quantity(amount), toBuy(true), name(name) {}
 
-    const std::string getName() const {
+    const std::string &getName() const {
         return name;
     }
 
@@ -21,7 +21,7 @@ public:
 
     virtual void getInfo() const = 0;
 
-    virtual const std::string getCategory() const = 0;
+    virtual const std::string &getCategory() const = 0;
 
     virtual void setToBuy(bool toBuy) = 0;
 
